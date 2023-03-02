@@ -63,16 +63,16 @@
             </objects>
             <point key="canvasLocation" x="2079" y="-1389"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Favorite Table View Controller-->
         <scene sceneID="3fs-we-oEv">
             <objects>
-                <tableViewController id="QrP-PQ-3bj" sceneMemberID="viewController">
+                <tableViewController id="QrP-PQ-3bj" customClass="FavoriteTableViewController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="a3Q-Xe-cjQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="153" id="gZV-z9-kYW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="153" id="gZV-z9-kYW" customClass="MovieTableViewCell" customModule="Ozinshe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gZV-z9-kYW" id="pgu-yX-xgg">
@@ -120,7 +120,6 @@
                                                 <constraint firstItem="zY0-kB-u5v" firstAttribute="leading" secondItem="p39-WV-foG" secondAttribute="leading" constant="12" id="1uu-9O-0DB"/>
                                                 <constraint firstItem="iSY-dN-4Yy" firstAttribute="top" secondItem="p39-WV-foG" secondAttribute="top" constant="4" id="7UQ-T6-VRQ"/>
                                                 <constraint firstAttribute="bottom" secondItem="zY0-kB-u5v" secondAttribute="bottom" constant="4" id="9RW-iL-IYd"/>
-                                                <constraint firstItem="zY0-kB-u5v" firstAttribute="top" secondItem="p39-WV-foG" secondAttribute="top" constant="20" symbolic="YES" id="REx-dh-lik"/>
                                                 <constraint firstItem="iSY-dN-4Yy" firstAttribute="leading" secondItem="zY0-kB-u5v" secondAttribute="trailing" constant="4" id="SUV-1o-cZi"/>
                                                 <constraint firstAttribute="trailing" secondItem="iSY-dN-4Yy" secondAttribute="trailing" constant="12" id="aLI-cS-OoN"/>
                                                 <constraint firstAttribute="bottom" secondItem="iSY-dN-4Yy" secondAttribute="bottom" constant="4" id="g2b-JZ-Fxp"/>
@@ -139,6 +138,12 @@
                                         <constraint firstItem="p39-WV-foG" firstAttribute="leading" secondItem="IPU-Kd-rPD" secondAttribute="trailing" constant="17" id="w20-tz-H23"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="DqF-3X-Zyl" id="BAf-Ye-Nue"/>
+                                    <outlet property="playView" destination="p39-WV-foG" id="TBG-1M-AXz"/>
+                                    <outlet property="posterImageView" destination="IPU-Kd-rPD" id="KBl-qj-EKu"/>
+                                    <outlet property="yearLabel" destination="nON-rm-zTD" id="z6e-fF-tYv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

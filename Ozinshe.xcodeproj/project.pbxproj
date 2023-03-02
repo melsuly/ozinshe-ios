@@ -20,6 +20,8 @@
 		1890610229B1035E008CE987 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 189060FF29B102DF008CE987 /* SFPRODISPLAYBOLD.OTF */; };
 		1890610329B10360008CE987 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 1890610029B102DF008CE987 /* SFPRODISPLAYREGULAR.OTF */; };
 		1890610629B103F1008CE987 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */; };
+		1890610929B10EE3008CE987 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */; };
+		1890610B29B10F86008CE987 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890610A29B10F86008CE987 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		189060FF29B102DF008CE987 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
 		1890610029B102DF008CE987 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
 		1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		1890610A29B10F86008CE987 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +114,8 @@
 				189060FE29B101F1008CE987 /* Fonts */,
 				189060CC29B0F4EC008CE987 /* AppDelegate.swift */,
 				189060CE29B0F4EC008CE987 /* SceneDelegate.swift */,
-				189060D029B0F4EC008CE987 /* ViewController.swift */,
+				1890610729B10B4C008CE987 /* Controllers */,
 				189060D229B0F4EC008CE987 /* Main.storyboard */,
-				189060FC29B0FB67008CE987 /* TabBarController.swift */,
 				189060D529B0F4ED008CE987 /* Assets.xcassets */,
 				189060D729B0F4ED008CE987 /* LaunchScreen.storyboard */,
 				189060DA29B0F4ED008CE987 /* Info.plist */,
@@ -145,6 +148,17 @@
 				1890610029B102DF008CE987 /* SFPRODISPLAYREGULAR.OTF */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1890610729B10B4C008CE987 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				189060D029B0F4EC008CE987 /* ViewController.swift */,
+				189060FC29B0FB67008CE987 /* TabBarController.swift */,
+				1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */,
+				1890610A29B10F86008CE987 /* MovieTableViewCell.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1890610929B10EE3008CE987 /* FavoriteTableViewController.swift in Sources */,
 				189060D129B0F4EC008CE987 /* ViewController.swift in Sources */,
+				1890610B29B10F86008CE987 /* MovieTableViewCell.swift in Sources */,
 				189060FD29B0FB67008CE987 /* TabBarController.swift in Sources */,
 				189060CD29B0F4EC008CE987 /* AppDelegate.swift in Sources */,
 				189060CF29B0F4EC008CE987 /* SceneDelegate.swift in Sources */,
