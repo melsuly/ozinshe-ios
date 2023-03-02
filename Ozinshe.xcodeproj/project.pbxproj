@@ -17,6 +17,9 @@
 		189060EE29B0F4EE008CE987 /* OzinsheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189060ED29B0F4EE008CE987 /* OzinsheUITests.swift */; };
 		189060F029B0F4EE008CE987 /* OzinsheUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189060EF29B0F4EE008CE987 /* OzinsheUITestsLaunchTests.swift */; };
 		189060FD29B0FB67008CE987 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189060FC29B0FB67008CE987 /* TabBarController.swift */; };
+		1890610229B1035E008CE987 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 189060FF29B102DF008CE987 /* SFPRODISPLAYBOLD.OTF */; };
+		1890610329B10360008CE987 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 1890610029B102DF008CE987 /* SFPRODISPLAYREGULAR.OTF */; };
+		1890610629B103F1008CE987 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		189060ED29B0F4EE008CE987 /* OzinsheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheUITests.swift; sourceTree = "<group>"; };
 		189060EF29B0F4EE008CE987 /* OzinsheUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		189060FC29B0FB67008CE987 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		189060FF29B102DF008CE987 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
+		1890610029B102DF008CE987 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
+		1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		189060CB29B0F4EC008CE987 /* Ozinshe */ = {
 			isa = PBXGroup;
 			children = (
+				189060FE29B101F1008CE987 /* Fonts */,
 				189060CC29B0F4EC008CE987 /* AppDelegate.swift */,
 				189060CE29B0F4EC008CE987 /* SceneDelegate.swift */,
 				189060D029B0F4EC008CE987 /* ViewController.swift */,
@@ -128,6 +135,16 @@
 				189060EF29B0F4EE008CE987 /* OzinsheUITestsLaunchTests.swift */,
 			);
 			path = OzinsheUITests;
+			sourceTree = "<group>";
+		};
+		189060FE29B101F1008CE987 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */,
+				189060FF29B102DF008CE987 /* SFPRODISPLAYBOLD.OTF */,
+				1890610029B102DF008CE987 /* SFPRODISPLAYREGULAR.OTF */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +251,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1890610629B103F1008CE987 /* SF-Pro-Display-Semibold.otf in Resources */,
+				1890610229B1035E008CE987 /* SFPRODISPLAYBOLD.OTF in Resources */,
 				189060D929B0F4ED008CE987 /* LaunchScreen.storyboard in Resources */,
 				189060D629B0F4ED008CE987 /* Assets.xcassets in Resources */,
+				1890610329B10360008CE987 /* SFPRODISPLAYREGULAR.OTF in Resources */,
 				189060D429B0F4EC008CE987 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
