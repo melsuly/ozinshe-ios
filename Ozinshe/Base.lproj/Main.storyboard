@@ -103,7 +103,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="RsU-iV-ghm">
             <objects>
-                <tabBarController id="b1O-8y-2e5" sceneMemberID="viewController">
+                <tabBarController id="b1O-8y-2e5" customClass="TabBarController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bcd-Nb-fMs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
