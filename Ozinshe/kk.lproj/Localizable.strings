@@ -5,6 +5,10 @@
   Created by Nurasyl on 03.03.2023.
   
 */
+"en" = "Ағылшынша";
+"ru" = "Орысша";
+"kk" = "Қазақша";
+
 "CURRENT_LANGUAGE" = "Қазақша";
 "LANGUAGE" = "Тіл";
 "MY_PROFILE" = "Менің профилім";

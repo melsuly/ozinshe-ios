@@ -19,12 +19,17 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
     
     var delegate: LanguageProtocol?
     
-    let languageArray = [["English", "en"], ["Русский", "ru"], ["Қазақша", "kk"]]
-    
+    var languageArray: [String] = Localize.availableLanguages()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let index = languageArray.firstIndex(of: "Base") {
+            languageArray.remove(at: index)
+        }
+
+        
         tableview.delegate = self
         tableview.dataSource = self
         
@@ -35,6 +40,14 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissView))
         tap.delegate = self
         view.addGestureRecognizer(tap)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        configureViews()
+    }
+    
+    func configureViews() {
+        languageLabel.text = "LANGUAGE".localized()
     }
     
     @objc func dismissView() {
@@ -57,13 +70,13 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         let label = cell.viewWithTag(1000) as! UILabel
-        label.text = languageArray[indexPath.row][0]
+        label.text = languageArray[indexPath.row].localized()
         
         let checkImage = cell.viewWithTag(1001) as! UIImageView
         
         checkImage.image = nil
         
-        if Localize.currentLanguage() == languageArray[indexPath.row][1] {
+        if Localize.currentLanguage() == languageArray[indexPath.row] {
             checkImage.image = UIImage(named: "Check")
         }
         
@@ -75,7 +88,7 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Localize.setCurrentLanguage(languageArray[indexPath.row][1])
+        Localize.setCurrentLanguage(languageArray[indexPath.row])
         
         delegate?.languageDidSelected()
         
