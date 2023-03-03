@@ -8,10 +8,16 @@
 import UIKit
 import Localize_Swift
 
-class LanguageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+protocol LanguageProtocol {
+    func languageDidSelected()
+}
+
+class LanguageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var backgroundView: UIView!
+    
+    var delegate: LanguageProtocol?
     
     let languageArray = [["English", "en"], ["Русский", "ru"], ["Қазақша", "kk"]]
     
@@ -25,6 +31,22 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
         backgroundView.layer.cornerRadius = 32
         backgroundView.clipsToBounds = true
         backgroundView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissView))
+        tap.delegate = self
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissView() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if (touch.view?.isDescendant(of: backgroundView))! {
+            return false
+        }
+        
+        return true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,6 +76,9 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Localize.setCurrentLanguage(languageArray[indexPath.row][1])
+        
+        delegate?.languageDidSelected()
+        
         dismiss(animated: true, completion: nil)
     }
 
