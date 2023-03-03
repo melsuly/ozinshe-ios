@@ -74,6 +74,9 @@
                                         <state key="normal" title="Тіл">
                                             <color key="titleColor" red="0.10980392156862745" green="0.14117647058823529" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="languageShow:" destination="H3u-IQ-KsF" eventType="touchDown" id="f3h-Xn-ivM"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="jKB-Rz-jKI">
                                         <rect key="frame" x="353" y="24" width="16" height="16"/>
@@ -127,15 +130,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Профиль" id="09P-2b-Jls"/>
+                    <connections>
+                        <outlet property="languageButton" destination="6pT-98-urn" id="wfL-Jd-i9f"/>
+                        <outlet property="languageLabel" destination="om6-It-TvN" id="m0z-F6-WW3"/>
+                        <outlet property="myProfileLabel" destination="9TJ-Yl-kcm" id="Bhz-au-dsv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4D-43-6lR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3003.8167938931297" y="-596.47887323943667"/>
         </scene>
-        <!--View Controller-->
+        <!--Language View Controller-->
         <scene sceneID="2xy-UB-CEL">
             <objects>
-                <viewController id="XNt-Rz-gvR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LanguageViewController" id="XNt-Rz-gvR" customClass="LanguageViewController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hHZ-SN-9Y8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +169,7 @@
                                         <rect key="frame" x="0.0" y="98.666666666666643" width="393" height="204.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="a50-Od-kOU">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="65" id="a50-Od-kOU">
                                                 <rect key="frame" x="0.0" y="50" width="393" height="65"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a50-Od-kOU" id="LSC-Gc-fKO">
@@ -175,13 +183,13 @@
                                                                 <constraint firstAttribute="height" constant="1" id="UPg-Ua-vvM"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қазақша" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQp-aH-RIl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қазақша" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQp-aH-RIl">
                                                             <rect key="frame" x="24" y="22.666666666666671" width="66" height="20"/>
                                                             <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="16"/>
                                                             <color key="textColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-VP-G9c">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-VP-G9c">
                                                             <rect key="frame" x="345" y="20.666666666666671" width="24" height="24"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="24" id="TUH-Wb-VEd"/>
@@ -225,6 +233,10 @@
                             <constraint firstItem="Rwg-EG-tqF" firstAttribute="leading" secondItem="se8-Iu-OvE" secondAttribute="leading" id="cka-Tg-bvG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="languageLabel" destination="ej0-yo-MFp" id="WxL-kv-W2f"/>
+                        <outlet property="tableview" destination="zCY-CY-NNa" id="kaG-tX-Av9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hht-Wl-suQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

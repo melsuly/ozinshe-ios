@@ -8,7 +8,10 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    @IBOutlet weak var myProfileLabel: UILabel!
+    @IBOutlet weak var languageButton: UIButton!
+    @IBOutlet weak var languageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +19,13 @@ class ProfileViewController: UIViewController {
     }
     
 
+    @IBAction func languageShow(_ sender: Any) {
+        let languageVC = storyboard?.instantiateViewController(withIdentifier: "LanguageViewController")
+        
+        languageVC!.modalPresentationStyle = .overFullScreen
+        
+        present(languageVC!, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -24,6 +24,7 @@
 		1890610B29B10F86008CE987 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890610A29B10F86008CE987 /* MovieTableViewCell.swift */; };
 		18A8C2A929B1D79900BA707C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A8C2AB29B1D79900BA707C /* Localizable.strings */; };
 		18A8C2AF29B1E05100BA707C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8C2AE29B1E05100BA707C /* ProfileViewController.swift */; };
+		18A8C2B129B1E48900BA707C /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8C2B029B1E48900BA707C /* LanguageViewController.swift */; };
 		36BE717FD3F61F2F88B0AB51 /* Pods_Ozinshe_OzinsheUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39E6447A3CD3AFF545F2303 /* Pods_Ozinshe_OzinsheUITests.framework */; };
 		3E4CB2221CEE3B3890074211 /* Pods_Ozinshe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441E044270C47481D710DB9F /* Pods_Ozinshe.framework */; };
 		62C6AFCC951F611F3AC05124 /* Pods_OzinsheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29E69A3EAA89D9E8F35A99B /* Pods_OzinsheTests.framework */; };
@@ -70,6 +71,7 @@
 		18A8C2AC29B1D7E900BA707C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18A8C2AD29B1D81F00BA707C /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18A8C2AE29B1E05100BA707C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18A8C2B029B1E48900BA707C /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		441E044270C47481D710DB9F /* Pods_Ozinshe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozinshe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C0B8A7E905DD06539DF48E /* Pods-Ozinshe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.release.xcconfig"; sourceTree = "<group>"; };
 		53122864708074DFC071DCBB /* Pods-Ozinshe-OzinsheUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe-OzinsheUITests.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe-OzinsheUITests/Pods-Ozinshe-OzinsheUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */,
 				1890610A29B10F86008CE987 /* MovieTableViewCell.swift */,
 				18A8C2AE29B1E05100BA707C /* ProfileViewController.swift */,
+				18A8C2B029B1E48900BA707C /* LanguageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			files = (
 				1890610929B10EE3008CE987 /* FavoriteTableViewController.swift in Sources */,
 				189060D129B0F4EC008CE987 /* ViewController.swift in Sources */,
+				18A8C2B129B1E48900BA707C /* LanguageViewController.swift in Sources */,
 				1890610B29B10F86008CE987 /* MovieTableViewCell.swift in Sources */,
 				189060FD29B0FB67008CE987 /* TabBarController.swift in Sources */,
 				18A8C2AF29B1E05100BA707C /* ProfileViewController.swift in Sources */,
