@@ -6,6 +6,11 @@ target 'Ozinshe' do
   use_frameworks!
 
   # Pods for Ozinshe
+  pod 'Alamofire'
+  pod 'SVProgressHUD'
+  pod 'SDWebImage'
+  pod 'SwiftyJSON'
+  pod 'Localize-Swift'
 
   target 'OzinsheTests' do
     inherit! :search_paths
