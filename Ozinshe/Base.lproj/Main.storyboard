@@ -234,6 +234,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="Rwg-EG-tqF" id="pMj-19-cYv"/>
                         <outlet property="languageLabel" destination="ej0-yo-MFp" id="WxL-kv-W2f"/>
                         <outlet property="tableview" destination="zCY-CY-NNa" id="kaG-tX-Av9"/>
                     </connections>

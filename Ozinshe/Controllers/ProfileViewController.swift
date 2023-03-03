@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class ProfileViewController: UIViewController {
     @IBOutlet weak var myProfileLabel: UILabel!
@@ -16,6 +17,12 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        myProfileLabel.text = "MY_PROFILE".localized()
+        languageButton.setTitle("LANGUAGE".localized(), for: .normal)
+        languageLabel.text = "CURRENT_LANGUAGE".localized()
     }
     
 

@@ -11,6 +11,7 @@ import Localize_Swift
 class LanguageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var backgroundView: UIView!
     
     let languageArray = [["English", "en"], ["Русский", "ru"], ["Қазақша", "kk"]]
     
@@ -20,6 +21,10 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view.
         tableview.delegate = self
         tableview.dataSource = self
+        
+        backgroundView.layer.cornerRadius = 32
+        backgroundView.clipsToBounds = true
+        backgroundView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
