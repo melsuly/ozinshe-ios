@@ -22,6 +22,7 @@
 		1890610629B103F1008CE987 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */; };
 		1890610929B10EE3008CE987 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */; };
 		1890610B29B10F86008CE987 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890610A29B10F86008CE987 /* MovieTableViewCell.swift */; };
+		18A8C2A929B1D79900BA707C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A8C2AB29B1D79900BA707C /* Localizable.strings */; };
 		36BE717FD3F61F2F88B0AB51 /* Pods_Ozinshe_OzinsheUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39E6447A3CD3AFF545F2303 /* Pods_Ozinshe_OzinsheUITests.framework */; };
 		3E4CB2221CEE3B3890074211 /* Pods_Ozinshe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441E044270C47481D710DB9F /* Pods_Ozinshe.framework */; };
 		62C6AFCC951F611F3AC05124 /* Pods_OzinsheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29E69A3EAA89D9E8F35A99B /* Pods_OzinsheTests.framework */; };
@@ -64,6 +65,9 @@
 		1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		1890610A29B10F86008CE987 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		18A8C2AA29B1D79900BA707C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18A8C2AC29B1D7E900BA707C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18A8C2AD29B1D81F00BA707C /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		441E044270C47481D710DB9F /* Pods_Ozinshe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozinshe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C0B8A7E905DD06539DF48E /* Pods-Ozinshe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.release.xcconfig"; sourceTree = "<group>"; };
 		53122864708074DFC071DCBB /* Pods-Ozinshe-OzinsheUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe-OzinsheUITests.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe-OzinsheUITests/Pods-Ozinshe-OzinsheUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				189060D529B0F4ED008CE987 /* Assets.xcassets */,
 				189060D729B0F4ED008CE987 /* LaunchScreen.storyboard */,
 				189060DA29B0F4ED008CE987 /* Info.plist */,
+				18A8C2AB29B1D79900BA707C /* Localizable.strings */,
 			);
 			path = Ozinshe;
 			sourceTree = "<group>";
@@ -198,7 +203,6 @@
 				8DE6210E9C8908EADD775162 /* Pods-OzinsheTests.debug.xcconfig */,
 				BE3F4D5D88408655DCDE9DB7 /* Pods-OzinsheTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -293,6 +297,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				kk,
 			);
 			mainGroup = 189060C029B0F4EC008CE987;
 			productRefGroup = 189060CA29B0F4EC008CE987 /* Products */;
@@ -314,6 +320,7 @@
 				1890610629B103F1008CE987 /* SF-Pro-Display-Semibold.otf in Resources */,
 				1890610229B1035E008CE987 /* SFPRODISPLAYBOLD.OTF in Resources */,
 				189060D929B0F4ED008CE987 /* LaunchScreen.storyboard in Resources */,
+				18A8C2A929B1D79900BA707C /* Localizable.strings in Resources */,
 				189060D629B0F4ED008CE987 /* Assets.xcassets in Resources */,
 				1890610329B10360008CE987 /* SFPRODISPLAYREGULAR.OTF in Resources */,
 				189060D429B0F4EC008CE987 /* Main.storyboard in Resources */,
@@ -502,6 +509,16 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		18A8C2AB29B1D79900BA707C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A8C2AA29B1D79900BA707C /* en */,
+				18A8C2AC29B1D7E900BA707C /* ru */,
+				18A8C2AD29B1D81F00BA707C /* kk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -509,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -569,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
