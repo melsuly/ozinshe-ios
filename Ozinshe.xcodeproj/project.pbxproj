@@ -27,6 +27,7 @@
 		18A8C2AF29B1E05100BA707C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8C2AE29B1E05100BA707C /* ProfileViewController.swift */; };
 		18A8C2B129B1E48900BA707C /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8C2B029B1E48900BA707C /* LanguageViewController.swift */; };
 		18D8140E29BBA915007F2A1F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8140D29BBA915007F2A1F /* SignInViewController.swift */; };
+		18D8141029BBAC68007F2A1F /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8140F29BBAC68007F2A1F /* URLs.swift */; };
 		36BE717FD3F61F2F88B0AB51 /* Pods_Ozinshe_OzinsheUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39E6447A3CD3AFF545F2303 /* Pods_Ozinshe_OzinsheUITests.framework */; };
 		3E4CB2221CEE3B3890074211 /* Pods_Ozinshe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441E044270C47481D710DB9F /* Pods_Ozinshe.framework */; };
 		62C6AFCC951F611F3AC05124 /* Pods_OzinsheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29E69A3EAA89D9E8F35A99B /* Pods_OzinsheTests.framework */; };
@@ -76,6 +77,7 @@
 		18A8C2AE29B1E05100BA707C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		18A8C2B029B1E48900BA707C /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		18D8140D29BBA915007F2A1F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		18D8140F29BBAC68007F2A1F /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		441E044270C47481D710DB9F /* Pods_Ozinshe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozinshe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C0B8A7E905DD06539DF48E /* Pods-Ozinshe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.release.xcconfig"; sourceTree = "<group>"; };
 		53122864708074DFC071DCBB /* Pods-Ozinshe-OzinsheUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe-OzinsheUITests.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe-OzinsheUITests/Pods-Ozinshe-OzinsheUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		18D8140929BBA800007F2A1F /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				18D8140F29BBAC68007F2A1F /* URLs.swift */,
 			);
 			path = Static;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				1890610929B10EE3008CE987 /* FavoriteTableViewController.swift in Sources */,
 				189060D129B0F4EC008CE987 /* ViewController.swift in Sources */,
 				18A8C2B129B1E48900BA707C /* LanguageViewController.swift in Sources */,
+				18D8141029BBAC68007F2A1F /* URLs.swift in Sources */,
 				1890610B29B10F86008CE987 /* MovieTableViewCell.swift in Sources */,
 				189060FD29B0FB67008CE987 /* TabBarController.swift in Sources */,
 				18A8C2AF29B1E05100BA707C /* ProfileViewController.swift in Sources */,
