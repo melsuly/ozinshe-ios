@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import SVProgressHUD
+import Alamofire
+import SwiftyJSON
 
 class SignInViewController: UIViewController {
 
@@ -57,6 +60,55 @@ class SignInViewController: UIViewController {
         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
     }
     
+    @IBAction func signin(_ sender: Any) {
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        
+        if email.isEmpty || password.isEmpty {
+            return
+        }
+        
+        SVProgressHUD.show()
+        
+        let parameters = ["email": email,
+                          "password": password]
+        
+        AF.request(URLs.SIGN_IN_URL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseData { response in
+            
+            SVProgressHUD.dismiss()
+            var resultString = ""
+            if let data = response.data {
+                resultString = String(data: data, encoding: .utf8)!
+                print(resultString)
+            }
+            
+            if response.response?.statusCode == 200 {
+                let json = JSON(response.data!)
+                print("JSON: \(json)")
+                
+                if let token = json["accessToken"].string {
+                    Storage.sharedInstance.accessToken = token
+                    UserDefaults.standard.set(token, forKey: "accessToken")
+                    self.startApp()
+                } else {
+                    SVProgressHUD.showError(withStatus: "CONNECTION_ERROR".localized())
+                }
+            } else {
+                var ErrorString = "CONNECTION_ERROR".localized()
+                if let sCode = response.response?.statusCode {
+                    ErrorString = ErrorString + " \(sCode)"
+                }
+                ErrorString = ErrorString + " \(resultString)"
+                SVProgressHUD.showError(withStatus: "\(ErrorString)")
+            }
+        }
+    }
+    
+    func startApp() {
+        let tabViewController = self.storyboard?.instantiateViewController(withIdentifier: "TabBarViewController")
+        tabViewController?.modalPresentationStyle = .fullScreen
+        self.present(tabViewController!, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
