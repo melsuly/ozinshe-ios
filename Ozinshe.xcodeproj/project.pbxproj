@@ -22,6 +22,7 @@
 		1890610629B103F1008CE987 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */; };
 		1890610929B10EE3008CE987 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */; };
 		1890610B29B10F86008CE987 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890610A29B10F86008CE987 /* MovieTableViewCell.swift */; };
+		1894E05729B4F92C00AB737B /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894E05629B4F92C00AB737B /* TextFieldWithPadding.swift */; };
 		18A8C2A929B1D79900BA707C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A8C2AB29B1D79900BA707C /* Localizable.strings */; };
 		18A8C2AF29B1E05100BA707C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8C2AE29B1E05100BA707C /* ProfileViewController.swift */; };
 		18A8C2B129B1E48900BA707C /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8C2B029B1E48900BA707C /* LanguageViewController.swift */; };
@@ -67,6 +68,7 @@
 		1890610529B103F1008CE987 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		1890610A29B10F86008CE987 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		1894E05629B4F92C00AB737B /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
 		18A8C2AA29B1D79900BA707C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18A8C2AC29B1D7E900BA707C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18A8C2AD29B1D81F00BA707C /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -136,10 +138,12 @@
 		189060CB29B0F4EC008CE987 /* Ozinshe */ = {
 			isa = PBXGroup;
 			children = (
+				1890610729B10B4C008CE987 /* Controllers */,
+				1894E05429B4F8FF00AB737B /* Extenstions */,
+				18D8140929BBA800007F2A1F /* Static */,
 				189060FE29B101F1008CE987 /* Fonts */,
 				189060CC29B0F4EC008CE987 /* AppDelegate.swift */,
 				189060CE29B0F4EC008CE987 /* SceneDelegate.swift */,
-				1890610729B10B4C008CE987 /* Controllers */,
 				189060D229B0F4EC008CE987 /* Main.storyboard */,
 				189060D529B0F4ED008CE987 /* Assets.xcassets */,
 				189060D729B0F4ED008CE987 /* LaunchScreen.storyboard */,
@@ -179,14 +183,45 @@
 		1890610729B10B4C008CE987 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				18D8140C29BBA854007F2A1F /* Profile */,
+				18D8140B29BBA84C007F2A1F /* Favorites */,
 				189060D029B0F4EC008CE987 /* ViewController.swift */,
 				189060FC29B0FB67008CE987 /* TabBarController.swift */,
-				1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */,
 				1890610A29B10F86008CE987 /* MovieTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1894E05429B4F8FF00AB737B /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				1894E05629B4F92C00AB737B /* TextFieldWithPadding.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		18D8140929BBA800007F2A1F /* Static */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Static;
+			sourceTree = "<group>";
+		};
+		18D8140B29BBA84C007F2A1F /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				1890610829B10EE3008CE987 /* FavoriteTableViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		18D8140C29BBA854007F2A1F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
 				18A8C2AE29B1E05100BA707C /* ProfileViewController.swift */,
 				18A8C2B029B1E48900BA707C /* LanguageViewController.swift */,
 			);
-			path = Controllers;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		E00358EF1875A192D075ABA0 /* Frameworks */ = {
@@ -464,6 +499,7 @@
 				189060FD29B0FB67008CE987 /* TabBarController.swift in Sources */,
 				18A8C2AF29B1E05100BA707C /* ProfileViewController.swift in Sources */,
 				189060CD29B0F4EC008CE987 /* AppDelegate.swift in Sources */,
+				1894E05729B4F92C00AB737B /* TextFieldWithPadding.swift in Sources */,
 				189060CF29B0F4EC008CE987 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
