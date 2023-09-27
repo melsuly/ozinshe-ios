@@ -19,6 +19,8 @@
 		1819A6712AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1819A66D2AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf */; };
 		1819A6742AC45FCF00DDF064 /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819A6732AC45FCF00DDF064 /* TextFieldWithPadding.swift */; };
 		1877339D2AC4873100D52C5C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877339C2AC4873100D52C5C /* Storage.swift */; };
+		1877339F2AC4933100D52C5C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877339E2AC4933100D52C5C /* ProfileViewController.swift */; };
+		187733A12AC4982E00D52C5C /* LogoutModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187733A02AC4982E00D52C5C /* LogoutModalController.swift */; };
 		79692888F72E69B45CAEE88B /* Pods_Ozinshe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C796C49343A36E61EEF51DD4 /* Pods_Ozinshe.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		1819A66D2AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		1819A6732AC45FCF00DDF064 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
 		1877339C2AC4873100D52C5C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		1877339E2AC4933100D52C5C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		187733A02AC4982E00D52C5C /* LogoutModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutModalController.swift; sourceTree = "<group>"; };
 		2A1F8D79B8FE25882F8BD12F /* Pods-Ozinshe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.debug.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.debug.xcconfig"; sourceTree = "<group>"; };
 		C61FDD3DE9E05B68B4B1A307 /* Pods-Ozinshe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.release.xcconfig"; sourceTree = "<group>"; };
 		C796C49343A36E61EEF51DD4 /* Pods_Ozinshe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozinshe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				1819A6572AC45B0B00DDF064 /* LoginViewController.swift */,
+				1877339E2AC4933100D52C5C /* ProfileViewController.swift */,
+				187733A02AC4982E00D52C5C /* LogoutModalController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -268,9 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1877339F2AC4933100D52C5C /* ProfileViewController.swift in Sources */,
 				1819A6582AC45B0B00DDF064 /* LoginViewController.swift in Sources */,
 				1819A6742AC45FCF00DDF064 /* TextFieldWithPadding.swift in Sources */,
 				1819A6542AC45B0B00DDF064 /* AppDelegate.swift in Sources */,
+				187733A12AC4982E00D52C5C /* LogoutModalController.swift in Sources */,
 				1819A6562AC45B0B00DDF064 /* SceneDelegate.swift in Sources */,
 				1877339D2AC4873100D52C5C /* Storage.swift in Sources */,
 			);

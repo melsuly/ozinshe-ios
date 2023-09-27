@@ -11,12 +11,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        // fix for SVProgressHud
-        (UIApplication.shared.delegate as! AppDelegate).window = window
-
         // show tabs if authorized
-        if let accessToken = UserDefaults.standard.string(forKey: "accessToken") {
+        if let accessToken = UserDefaults.standard.string(forKey: "accessToken"),
+           let userEmail = UserDefaults.standard.string(forKey: "userEmail") {
             Storage.shared.accessToken = accessToken
+            Storage.shared.userEmail = userEmail
 
             let window = UIWindow(windowScene: windowScene)
 
@@ -29,7 +28,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             self.window = window
         }
+    }
 
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        // fix for SVProgressHud
+        (UIApplication.shared.delegate as! AppDelegate).window = window
     }
 }
 

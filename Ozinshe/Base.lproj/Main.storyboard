@@ -199,7 +199,7 @@
         <!--Navigation Controller-->
         <scene sceneID="sOi-OR-nOl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PJI-dN-FVQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="PJI-dN-FVQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pxk-T6-7fV">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -262,7 +262,7 @@
         <!--Профиль-->
         <scene sceneID="CfR-66-8dp">
             <objects>
-                <viewController id="XjM-MU-qJc" sceneMemberID="viewController">
+                <viewController id="XjM-MU-qJc" customClass="ProfileViewController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g8S-sM-2Y8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,6 +299,9 @@
                                                 <state key="normal" title="Жеке деректер">
                                                     <color key="titleColor" red="0.10980392156862745" green="0.14117647058823529" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="personalDataTouched:" destination="XjM-MU-qJc" eventType="touchUpInside" id="SQW-W9-FiH"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxK-jh-lPr" userLabel="Divider">
                                                 <rect key="frame" x="24" y="64" width="345" height="1"/>
@@ -347,6 +350,9 @@
                                                 <state key="normal" title="Құпия сөзді өзгерту">
                                                     <color key="titleColor" red="0.10980392160000001" green="0.14117647059999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="changePasswordTouched:" destination="XjM-MU-qJc" eventType="touchUpInside" id="xZU-m3-99F"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bW-xj-xY7" userLabel="Divider">
                                                 <rect key="frame" x="24" y="64" width="345" height="1"/>
@@ -395,6 +401,9 @@
                                                 <state key="normal" title="Тіл">
                                                     <color key="titleColor" red="0.10980392160000001" green="0.14117647059999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="changeLanguageTouched:" destination="XjM-MU-qJc" eventType="touchUpInside" id="wen-16-kuh"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upB-J3-X67" userLabel="Divider">
                                                 <rect key="frame" x="24" y="64" width="345" height="1"/>
@@ -451,6 +460,9 @@
                                                 <rect key="frame" x="320" y="16.666666666666629" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.70196078431372544" green="0.46274509803921571" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="thumbTintColor" red="0.89803921568627454" green="0.90588235294117647" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="themeSwitchValueChanged:" destination="XjM-MU-qJc" eventType="valueChanged" id="qtq-nu-XRm"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                         <constraints>
@@ -500,12 +512,115 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Профиль" id="Lm6-yW-7Lx">
-                        <barButtonItem key="rightBarButtonItem" image="logout" id="siN-31-mHe"/>
+                        <barButtonItem key="rightBarButtonItem" image="logout" id="siN-31-mHe">
+                            <connections>
+                                <action selector="logoutTouched:" destination="XjM-MU-qJc" id="Bdg-oR-wTM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailLabel" destination="b8D-6s-7oZ" id="gJH-MZ-Arl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prb-U4-5ty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1641.9847328244275" y="2869.7183098591549"/>
+        </scene>
+        <!--Logout Modal Controller-->
+        <scene sceneID="LFA-WA-ZOX">
+            <objects>
+                <viewController storyboardIdentifier="LogoutModalController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XAM-oJ-w8c" customClass="LogoutModalController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o2b-aO-Ket">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCt-o4-7VT">
+                                <rect key="frame" x="0.0" y="549" width="393" height="303"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bul-TP-Pn4">
+                                        <rect key="frame" x="164.66666666666666" y="21" width="64" height="5"/>
+                                        <color key="backgroundColor" red="0.81960784313725488" green="0.83529411764705885" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="DEo-cw-9jB"/>
+                                            <constraint firstAttribute="height" constant="5" id="FkJ-n2-SqC"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Шығу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7G7-lu-CDw">
+                                        <rect key="frame" x="24" y="58" width="345" height="29"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
+                                        <color key="textColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сіз шынымен аккаунтыңыздан шығасызба?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWV-WJ-ZtN">
+                                        <rect key="frame" x="24" y="95" width="345" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skd-Qf-4c4">
+                                        <rect key="frame" x="24" y="147" width="345" height="56"/>
+                                        <color key="backgroundColor" red="0.4941176471" green="0.1764705882" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="agq-7v-aSF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Ия, шығу">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutTouched:" destination="XAM-oJ-w8c" eventType="touchUpInside" id="NXj-49-y7o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArI-Sc-GYI">
+                                        <rect key="frame" x="24" y="211" width="345" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="ED6-hU-3Wk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Жоқ">
+                                            <color key="titleColor" red="0.32941176470588235" green="0.082352941176470587" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7G7-lu-CDw" firstAttribute="leading" secondItem="xCt-o4-7VT" secondAttribute="leading" constant="24" id="2jT-Ze-jPf"/>
+                                    <constraint firstItem="skd-Qf-4c4" firstAttribute="top" secondItem="LWV-WJ-ZtN" secondAttribute="bottom" constant="32" id="5rf-PC-W2q"/>
+                                    <constraint firstItem="LWV-WJ-ZtN" firstAttribute="top" secondItem="7G7-lu-CDw" secondAttribute="bottom" constant="8" id="75P-UT-iEV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ArI-Sc-GYI" secondAttribute="trailing" constant="24" id="8ft-cP-4ia"/>
+                                    <constraint firstItem="LWV-WJ-ZtN" firstAttribute="leading" secondItem="xCt-o4-7VT" secondAttribute="leading" constant="24" id="CYC-Gl-8BO"/>
+                                    <constraint firstItem="ArI-Sc-GYI" firstAttribute="leading" secondItem="xCt-o4-7VT" secondAttribute="leading" constant="24" id="F3G-B6-Tcx"/>
+                                    <constraint firstItem="7G7-lu-CDw" firstAttribute="top" secondItem="Bul-TP-Pn4" secondAttribute="bottom" constant="32" id="IVQ-Bi-MP1"/>
+                                    <constraint firstItem="Bul-TP-Pn4" firstAttribute="centerX" secondItem="xCt-o4-7VT" secondAttribute="centerX" id="SMs-8g-bAa"/>
+                                    <constraint firstAttribute="trailing" secondItem="7G7-lu-CDw" secondAttribute="trailing" constant="24" id="TA7-15-nLa"/>
+                                    <constraint firstAttribute="height" constant="303" id="TXb-sm-nwI"/>
+                                    <constraint firstAttribute="trailing" secondItem="skd-Qf-4c4" secondAttribute="trailing" constant="24" id="ZLN-hA-NOz"/>
+                                    <constraint firstItem="ArI-Sc-GYI" firstAttribute="top" secondItem="skd-Qf-4c4" secondAttribute="bottom" constant="8" id="dMY-CX-qHd"/>
+                                    <constraint firstItem="Bul-TP-Pn4" firstAttribute="top" secondItem="xCt-o4-7VT" secondAttribute="top" constant="21" id="fbT-oj-cmu"/>
+                                    <constraint firstItem="skd-Qf-4c4" firstAttribute="leading" secondItem="xCt-o4-7VT" secondAttribute="leading" constant="24" id="yyq-im-jDn"/>
+                                    <constraint firstAttribute="trailing" secondItem="LWV-WJ-ZtN" secondAttribute="trailing" constant="24" id="zzL-4U-fu5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kfO-KQ-TGU"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xCt-o4-7VT" firstAttribute="leading" secondItem="kfO-KQ-TGU" secondAttribute="leading" id="4nl-fa-SJw"/>
+                            <constraint firstAttribute="bottom" secondItem="xCt-o4-7VT" secondAttribute="bottom" id="ZSN-6X-2op"/>
+                            <constraint firstItem="xCt-o4-7VT" firstAttribute="trailing" secondItem="kfO-KQ-TGU" secondAttribute="trailing" id="rW0-fc-Gnz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="xCt-o4-7VT" id="Hgi-Jn-Zah"/>
+                        <outlet property="grabberView" destination="Bul-TP-Pn4" id="Dsf-la-kmg"/>
+                        <outlet property="logoutButton" destination="skd-Qf-4c4" id="Mdd-Oq-d9E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHN-Fx-0lt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2423.6641221374043" y="2869.7183098591549"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gc0-iV-vIg">

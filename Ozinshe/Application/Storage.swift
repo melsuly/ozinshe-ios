@@ -7,4 +7,5 @@ class Storage {
     public static let shared = Storage()
 
     public var accessToken = ""
+    public var userEmail = ""
 }
