@@ -1,0 +1,75 @@
+
+/* Class = "UILabel"; text = "Өңдеу"; ObjectID = "2QB-TX-xqW"; */
+"2QB-TX-xqW.text" = "Өңдеу";
+
+/* Class = "UIButton"; normalTitle = "Тіркелу"; ObjectID = "5AD-Ty-OKM"; */
+"5AD-Ty-OKM.normalTitle" = "Тіркелу";
+
+/* Class = "UILabel"; text = "Шығу"; ObjectID = "7G7-lu-CDw"; */
+"7G7-lu-CDw.text" = "Шығу";
+
+/* Class = "UIButton"; normalTitle = "Жоқ"; ObjectID = "ArI-Sc-GYI"; */
+"ArI-Sc-GYI.normalTitle" = "Жоқ";
+
+/* Class = "UITextField"; placeholder = "Сіздің құпия сөзіңіз"; ObjectID = "COO-vN-Wpe"; */
+"COO-vN-Wpe.placeholder" = "Сіздің құпия сөзіңіз";
+
+/* Class = "UILabel"; text = "Тіл"; ObjectID = "Gbc-iD-Lp7"; */
+"Gbc-iD-Lp7.text" = "Тіл";
+
+/* Class = "UIButton"; normalTitle = "Қараңғы режим"; ObjectID = "KT7-0O-ZCN"; */
+"KT7-0O-ZCN.normalTitle" = "Қараңғы режим";
+
+/* Class = "UILabel"; text = "Сіз шынымен аккаунтыңыздан шығасызба?"; ObjectID = "LWV-WJ-ZtN"; */
+"LWV-WJ-ZtN.text" = "Сіз шынымен аккаунтыңыздан шығасызба?";
+
+/* Class = "UINavigationItem"; title = "Профиль"; ObjectID = "Lm6-yW-7Lx"; */
+"Lm6-yW-7Lx.title" = "Профиль";
+
+/* Class = "UITextField"; placeholder = "Сіздің email"; ObjectID = "O7r-UN-Y6M"; */
+"O7r-UN-Y6M.placeholder" = "Сіздің email";
+
+/* Class = "UILabel"; text = "Қазақша"; ObjectID = "Udk-io-BF8"; */
+"Udk-io-BF8.text" = "Қазақша";
+
+/* Class = "UILabel"; text = "Құпия сөз"; ObjectID = "WhQ-sF-fR7"; */
+"WhQ-sF-fR7.text" = "Құпия сөз";
+
+/* Class = "UILabel"; text = "Сәлем"; ObjectID = "aCC-Qk-JTL"; */
+"aCC-Qk-JTL.text" = "Сәлем";
+
+/* Class = "UIButton"; normalTitle = "Құпия сөзді ұмыттыңыз ба?"; ObjectID = "aFR-0k-LCr"; */
+"aFR-0k-LCr.normalTitle" = "Құпия сөзді ұмыттыңыз ба?";
+
+/* Class = "UILabel"; text = "Менің профилім"; ObjectID = "aUI-G8-Sbd"; */
+"aUI-G8-Sbd.text" = "Менің профилім";
+
+/* Class = "UILabel"; text = "ali@gmail.com"; ObjectID = "b8D-6s-7oZ"; */
+"b8D-6s-7oZ.text" = "ali@gmail.com";
+
+/* Class = "UILabel"; text = "Аккаунтыныз жоқ па?"; ObjectID = "bdg-ep-xaT"; */
+"bdg-ep-xaT.text" = "Аккаунтыныз жоқ па?";
+
+/* Class = "UIButton"; normalTitle = "Тіл"; ObjectID = "duw-qO-hRn"; */
+"duw-qO-hRn.normalTitle" = "Тіл";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "eZR-ul-Pdc"; */
+"eZR-ul-Pdc.text" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Кіру"; ObjectID = "frI-7O-cqR"; */
+"frI-7O-cqR.normalTitle" = "Кіру";
+
+/* Class = "UIButton"; normalTitle = "Құпия сөзді өзгерту"; ObjectID = "hT1-op-bjw"; */
+"hT1-op-bjw.normalTitle" = "Құпия сөзді өзгерту";
+
+/* Class = "UILabel"; text = "Аккаунтқа кіріңіз"; ObjectID = "ocA-C5-RRm"; */
+"ocA-C5-RRm.text" = "Аккаунтқа кіріңіз";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "rpx-1D-PbN"; */
+"rpx-1D-PbN.text" = "English";
+
+/* Class = "UIButton"; normalTitle = "Ия, шығу"; ObjectID = "skd-Qf-4c4"; */
+"skd-Qf-4c4.normalTitle" = "Ия, шығу";
+
+/* Class = "UIButton"; normalTitle = "Жеке деректер"; ObjectID = "vjj-ty-kGi"; */
+"vjj-ty-kGi.normalTitle" = "Жеке деректер";

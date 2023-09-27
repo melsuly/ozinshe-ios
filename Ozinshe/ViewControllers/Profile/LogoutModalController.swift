@@ -21,8 +21,11 @@ class LogoutModalController: UIViewController {
             .layerMaxXMinYCorner
         ]
 
+        grabberView.layer.cornerRadius = 2.5
+
         logoutButton.layer.cornerRadius = 12
     }
+
     @IBAction func logoutTouched(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "accessToken")
 
@@ -30,5 +33,9 @@ class LogoutModalController: UIViewController {
         let loginNavigationController = storyboard?.instantiateViewController(withIdentifier: "LoginNavigationController")
 
         appDelegate.window?.rootViewController = loginNavigationController
+    }
+
+    @IBAction func cancelTouched(_ sender: Any) {
+        dismiss(animated: true)
     }
 }

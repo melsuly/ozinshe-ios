@@ -99,5 +99,13 @@ class LoginViewController: UIViewController {
         
         self.present(tabBarController, animated: true)
     }
+
+    @IBAction func textFieldEditingBegin(_ sender: UITextField) {
+        sender.layer.borderColor = UIColor(red: 0.59, green: 0.33, blue: 0.94, alpha: 1).cgColor
+    }
+
+    @IBAction func textFieldEditingEnd(_ sender: UITextField) {
+        sender.layer.borderColor = UIColor(red: 0.9, green: 0.92, blue: 0.94, alpha: 1).cgColor
+    }
 }
 

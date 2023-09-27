@@ -3,13 +3,16 @@
 //
 
 import UIKit
+import Localize_Swift
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, LanguageProtocol {
+    @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
+        languageDidChange()
     }
 
     func configureViews() {
@@ -23,6 +26,12 @@ class ProfileViewController: UIViewController {
     }
 
     @IBAction func changeLanguageTouched(_ sender: Any) {
+        let languageModalController = storyboard?.instantiateViewController(identifier: "LanguageModalController") as! LanguageModalController
+
+        languageModalController.delegate = self
+        languageModalController.modalPresentationStyle = .overFullScreen
+
+        present(languageModalController, animated: true)
     }
 
     @IBAction func themeSwitchValueChanged(_ sender: UISwitch) {
@@ -36,5 +45,9 @@ class ProfileViewController: UIViewController {
         logoutModalController.modalPresentationStyle = .overFullScreen
 
         present(logoutModalController, animated: true)
+    }
+
+    func languageDidChange() {
+        languageLabel.text = "LANGUAGE_NAME".localized()
     }
 }
