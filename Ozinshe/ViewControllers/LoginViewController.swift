@@ -63,7 +63,11 @@ class LoginViewController: UIViewController {
                 let json = JSON(data)
 
                 if let accessToken = json["accessToken"].string {
-                    print("Success log in!: \(accessToken)")
+                    Storage.shared.accessToken = accessToken
+                    UserDefaults.standard.set(accessToken, forKey: "accessToken")
+
+                    self.startApp()
+
                     return
                 }
             }
@@ -81,6 +85,15 @@ class LoginViewController: UIViewController {
 
     @IBAction func registerTouched(_ sender: Any) {
         // TODO: Open register VC
+    }
+
+    func startApp() {
+        let tabBarController = (storyboard?.instantiateViewController(identifier: "TabBarController"))!
+
+        tabBarController.modalPresentationStyle = .fullScreen
+        tabBarController.modalTransitionStyle = .flipHorizontal
+
+        self.present(tabBarController, animated: true)
     }
 }
 

@@ -51,7 +51,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="vE8-wC-lme"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -212,16 +211,113 @@
             </objects>
             <point key="canvasLocation" x="84.732824427480907" y="-119.01408450704226"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="YPj-Ot-6JW">
+            <objects>
+                <viewController id="FLy-el-TJh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ihs-o9-Zre">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lb5-em-Hlw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Search" selectedImage="Search-Selected" id="1aW-ck-5tZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3EK-CL-eYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="1396"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="8er-GB-gDH">
+            <objects>
+                <tableViewController id="vcL-8J-phi" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Iwh-7f-VCy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="T7Y-Iw-uOH">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T7Y-Iw-uOH" id="0yO-Be-ugF">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vcL-8J-phi" id="1xh-j3-F6z"/>
+                            <outlet property="delegate" destination="vcL-8J-phi" id="5Li-fv-KcD"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Favorites" selectedImage="Favorites-Selected" id="OQE-cQ-qHh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHZ-yE-6fq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="2145"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CfR-66-8dp">
+            <objects>
+                <viewController id="XjM-MU-qJc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g8S-sM-2Y8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yZF-Pl-9ld"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" selectedImage="Profile-Selected" id="eMx-XI-zoC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prb-U4-5ty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="2870"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gc0-iV-vIg">
+            <objects>
+                <viewController id="Yt4-4h-aK3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GEQ-Lm-88d">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dkh-5e-BGY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="Home-Selected" id="8Rz-Ae-ndW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhV-Uc-u8w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="663"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cqO-Rw-mQB">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f7Q-lm-JYr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SLi-F6-591">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yt4-4h-aK3" kind="relationship" relationship="viewControllers" id="kmA-nA-dIR"/>
+                        <segue destination="FLy-el-TJh" kind="relationship" relationship="viewControllers" id="M2S-FR-KEN"/>
+                        <segue destination="vcL-8J-phi" kind="relationship" relationship="viewControllers" id="bsZ-gL-baj"/>
+                        <segue destination="XjM-MU-qJc" kind="relationship" relationship="viewControllers" id="6pz-d9-hYN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGA-W5-TZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="663"/>
+        </scene>
     </scenes>
-    <designables>
-        <designable name="COO-vN-Wpe">
-            <size key="intrinsicContentSize" width="179" height="20"/>
-        </designable>
-        <designable name="O7r-UN-Y6M">
-            <size key="intrinsicContentSize" width="123" height="21"/>
-        </designable>
-    </designables>
     <resources>
+        <image name="Favorites" width="40" height="40"/>
+        <image name="Favorites-Selected" width="40" height="40"/>
+        <image name="Home" width="40" height="40"/>
+        <image name="Home-Selected" width="40" height="40"/>
+        <image name="Profile" width="40" height="40"/>
+        <image name="Profile-Selected" width="40" height="40"/>
+        <image name="Search" width="40" height="40"/>
+        <image name="Search-Selected" width="40" height="40"/>
         <image name="email" width="20" height="20"/>
         <image name="password" width="20" height="20"/>
         <image name="show-password" width="20" height="20"/>
