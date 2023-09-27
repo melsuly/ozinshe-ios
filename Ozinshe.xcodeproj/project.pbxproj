@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		1819A6542AC45B0B00DDF064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819A6532AC45B0B00DDF064 /* AppDelegate.swift */; };
 		1819A6562AC45B0B00DDF064 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819A6552AC45B0B00DDF064 /* SceneDelegate.swift */; };
-		1819A6582AC45B0B00DDF064 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819A6572AC45B0B00DDF064 /* ViewController.swift */; };
+		1819A6582AC45B0B00DDF064 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819A6572AC45B0B00DDF064 /* LoginViewController.swift */; };
 		1819A65B2AC45B0B00DDF064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1819A6592AC45B0B00DDF064 /* Main.storyboard */; };
 		1819A65D2AC45B0C00DDF064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1819A65C2AC45B0C00DDF064 /* Assets.xcassets */; };
 		1819A6602AC45B0C00DDF064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1819A65E2AC45B0C00DDF064 /* LaunchScreen.storyboard */; };
+		1819A66E2AC45DAB00DDF064 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1819A66A2AC45DAA00DDF064 /* SF-Pro-Display-Bold.otf */; };
+		1819A66F2AC45DAB00DDF064 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1819A66B2AC45DAA00DDF064 /* SF-Pro-Display-Regular.otf */; };
+		1819A6702AC45DAB00DDF064 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1819A66C2AC45DAB00DDF064 /* SF-Pro-Display-Medium.otf */; };
+		1819A6712AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1819A66D2AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf */; };
+		1819A6742AC45FCF00DDF064 /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819A6732AC45FCF00DDF064 /* TextFieldWithPadding.swift */; };
+		79692888F72E69B45CAEE88B /* Pods_Ozinshe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C796C49343A36E61EEF51DD4 /* Pods_Ozinshe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1819A6502AC45B0B00DDF064 /* Ozinshe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ozinshe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1819A6532AC45B0B00DDF064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1819A6552AC45B0B00DDF064 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1819A6572AC45B0B00DDF064 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1819A6572AC45B0B00DDF064 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1819A65A2AC45B0B00DDF064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1819A65C2AC45B0C00DDF064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1819A65F2AC45B0C00DDF064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1819A6612AC45B0C00DDF064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1819A66A2AC45DAA00DDF064 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		1819A66B2AC45DAA00DDF064 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		1819A66C2AC45DAB00DDF064 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		1819A66D2AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		1819A6732AC45FCF00DDF064 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		2A1F8D79B8FE25882F8BD12F /* Pods-Ozinshe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.debug.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.debug.xcconfig"; sourceTree = "<group>"; };
+		C61FDD3DE9E05B68B4B1A307 /* Pods-Ozinshe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.release.xcconfig"; sourceTree = "<group>"; };
+		C796C49343A36E61EEF51DD4 /* Pods_Ozinshe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozinshe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79692888F72E69B45CAEE88B /* Pods_Ozinshe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				1819A6522AC45B0B00DDF064 /* Ozinshe */,
 				1819A6512AC45B0B00DDF064 /* Products */,
+				427B6644F060500F37A4085E /* Pods */,
+				56C66BE16E21D18F8482FAC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +73,10 @@
 		1819A6522AC45B0B00DDF064 /* Ozinshe */ = {
 			isa = PBXGroup;
 			children = (
+				1819A6722AC45FB700DDF064 /* Views */,
 				1819A6682AC45CB700DDF064 /* Resources */,
 				1819A6672AC45CAB00DDF064 /* Application */,
-				1819A6572AC45B0B00DDF064 /* ViewController.swift */,
+				1819A6572AC45B0B00DDF064 /* LoginViewController.swift */,
 				1819A6592AC45B0B00DDF064 /* Main.storyboard */,
 				1819A6612AC45B0C00DDF064 /* Info.plist */,
 			);
@@ -77,10 +95,48 @@
 		1819A6682AC45CB700DDF064 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1819A6692AC45D8C00DDF064 /* Fonts */,
 				1819A65C2AC45B0C00DDF064 /* Assets.xcassets */,
 				1819A65E2AC45B0C00DDF064 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1819A6692AC45D8C00DDF064 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1819A66A2AC45DAA00DDF064 /* SF-Pro-Display-Bold.otf */,
+				1819A66C2AC45DAB00DDF064 /* SF-Pro-Display-Medium.otf */,
+				1819A66B2AC45DAA00DDF064 /* SF-Pro-Display-Regular.otf */,
+				1819A66D2AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1819A6722AC45FB700DDF064 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1819A6732AC45FCF00DDF064 /* TextFieldWithPadding.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		427B6644F060500F37A4085E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A1F8D79B8FE25882F8BD12F /* Pods-Ozinshe.debug.xcconfig */,
+				C61FDD3DE9E05B68B4B1A307 /* Pods-Ozinshe.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56C66BE16E21D18F8482FAC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C796C49343A36E61EEF51DD4 /* Pods_Ozinshe.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1819A6642AC45B0C00DDF064 /* Build configuration list for PBXNativeTarget "Ozinshe" */;
 			buildPhases = (
+				CD13C9A4EDED8876CA79DABD /* [CP] Check Pods Manifest.lock */,
 				1819A64C2AC45B0B00DDF064 /* Sources */,
 				1819A64D2AC45B0B00DDF064 /* Frameworks */,
 				1819A64E2AC45B0B00DDF064 /* Resources */,
+				027F646DC540EAA010B4994C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,20 +199,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1819A6702AC45DAB00DDF064 /* SF-Pro-Display-Medium.otf in Resources */,
 				1819A6602AC45B0C00DDF064 /* LaunchScreen.storyboard in Resources */,
 				1819A65D2AC45B0C00DDF064 /* Assets.xcassets in Resources */,
+				1819A6712AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf in Resources */,
+				1819A66E2AC45DAB00DDF064 /* SF-Pro-Display-Bold.otf in Resources */,
+				1819A66F2AC45DAB00DDF064 /* SF-Pro-Display-Regular.otf in Resources */,
 				1819A65B2AC45B0B00DDF064 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		027F646DC540EAA010B4994C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ozinshe/Pods-Ozinshe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ozinshe/Pods-Ozinshe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ozinshe/Pods-Ozinshe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD13C9A4EDED8876CA79DABD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ozinshe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1819A64C2AC45B0B00DDF064 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1819A6582AC45B0B00DDF064 /* ViewController.swift in Sources */,
+				1819A6582AC45B0B00DDF064 /* LoginViewController.swift in Sources */,
+				1819A6742AC45FCF00DDF064 /* TextFieldWithPadding.swift in Sources */,
 				1819A6542AC45B0B00DDF064 /* AppDelegate.swift in Sources */,
 				1819A6562AC45B0B00DDF064 /* SceneDelegate.swift in Sources */,
 			);
@@ -298,6 +403,7 @@
 		};
 		1819A6652AC45B0C00DDF064 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1F8D79B8FE25882F8BD12F /* Pods-Ozinshe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -331,6 +437,7 @@
 		};
 		1819A6662AC45B0C00DDF064 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61FDD3DE9E05B68B4B1A307 /* Pods-Ozinshe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
