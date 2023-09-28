@@ -9,6 +9,6 @@ target 'Ozinshe' do
   pod 'Alamofire'
   pod 'SVProgressHUD'
   pod 'SwiftyJSON', '~> 4.0'
-  
+  pod 'SDWebImage', '~> 5.0'
   pod 'Localize-Swift', '~> 3.2'
 end

@@ -240,22 +240,85 @@
             </objects>
             <point key="canvasLocation" x="844" y="1396"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Favorites Table View Controller-->
         <scene sceneID="8er-GB-gDH">
             <objects>
-                <tableViewController id="vcL-8J-phi" sceneMemberID="viewController">
+                <tableViewController id="vcL-8J-phi" customClass="FavoritesTableViewController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Iwh-7f-VCy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="T7Y-Iw-uOH">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="152" id="T7Y-Iw-uOH" customClass="MovieTableViewCell" customModule="Ozinshe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T7Y-Iw-uOH" id="0yO-Be-ugF">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n2V-hU-9wM">
+                                            <rect key="frame" x="24" y="24" width="71" height="104"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="71" id="mb0-cL-c3I"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2X-8N-ofV">
+                                            <rect key="frame" x="112" y="24" width="257" height="17"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                            <color key="textColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIm-PG-dwu">
+                                            <rect key="frame" x="112" y="49" width="257" height="14.333333333333336"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                            <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRN-39-eIp">
+                                            <rect key="frame" x="112" y="87.333333333333329" width="80" height="24"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play-small" translatesAutoresizingMaskIntoConstraints="NO" id="0E4-HP-9B2">
+                                                    <rect key="frame" x="12" y="4" width="16" height="16"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қарау" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id7-BD-hdI">
+                                                    <rect key="frame" x="32" y="4" width="36" height="16"/>
+                                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                                                    <color key="textColor" red="0.59215686274509804" green="0.32549019607843138" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.97254901960784312" green="0.93333333333333335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Id7-BD-hdI" secondAttribute="trailing" constant="12" id="9Ep-1o-ehv"/>
+                                                <constraint firstItem="0E4-HP-9B2" firstAttribute="top" secondItem="qRN-39-eIp" secondAttribute="top" constant="4" id="F6L-YT-a8A"/>
+                                                <constraint firstAttribute="bottom" secondItem="Id7-BD-hdI" secondAttribute="bottom" constant="4" id="LkX-g5-iQo"/>
+                                                <constraint firstItem="Id7-BD-hdI" firstAttribute="leading" secondItem="0E4-HP-9B2" secondAttribute="trailing" constant="4" id="W8E-LK-0Tg"/>
+                                                <constraint firstItem="Id7-BD-hdI" firstAttribute="top" secondItem="qRN-39-eIp" secondAttribute="top" constant="4" id="Wof-Ky-xSO"/>
+                                                <constraint firstItem="0E4-HP-9B2" firstAttribute="leading" secondItem="qRN-39-eIp" secondAttribute="leading" constant="12" id="l73-nk-nRj"/>
+                                                <constraint firstAttribute="bottom" secondItem="0E4-HP-9B2" secondAttribute="bottom" constant="4" id="mdk-HW-w1C"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="D2X-8N-ofV" firstAttribute="top" secondItem="0yO-Be-ugF" secondAttribute="top" constant="24" id="FJS-0a-f2J"/>
+                                        <constraint firstItem="n2V-hU-9wM" firstAttribute="leading" secondItem="0yO-Be-ugF" secondAttribute="leading" constant="24" id="GZo-Ui-s6H"/>
+                                        <constraint firstItem="qRN-39-eIp" firstAttribute="leading" secondItem="D2X-8N-ofV" secondAttribute="leading" id="VTa-OO-F5n"/>
+                                        <constraint firstItem="qRN-39-eIp" firstAttribute="top" secondItem="nIm-PG-dwu" secondAttribute="bottom" constant="24" id="Wxe-LG-7Rl"/>
+                                        <constraint firstAttribute="bottom" secondItem="n2V-hU-9wM" secondAttribute="bottom" constant="24" id="ljb-nC-sDG"/>
+                                        <constraint firstItem="nIm-PG-dwu" firstAttribute="trailing" secondItem="D2X-8N-ofV" secondAttribute="trailing" id="nOA-M9-8rn"/>
+                                        <constraint firstItem="nIm-PG-dwu" firstAttribute="top" secondItem="D2X-8N-ofV" secondAttribute="bottom" constant="8" id="qF6-Fd-QM5"/>
+                                        <constraint firstItem="n2V-hU-9wM" firstAttribute="top" secondItem="0yO-Be-ugF" secondAttribute="top" constant="24" id="qfO-2B-Eea"/>
+                                        <constraint firstItem="nIm-PG-dwu" firstAttribute="leading" secondItem="D2X-8N-ofV" secondAttribute="leading" id="spM-vR-yCa"/>
+                                        <constraint firstAttribute="trailing" secondItem="D2X-8N-ofV" secondAttribute="trailing" constant="24" id="t30-Gg-IuE"/>
+                                        <constraint firstItem="D2X-8N-ofV" firstAttribute="leading" secondItem="n2V-hU-9wM" secondAttribute="trailing" constant="17" id="yJl-lq-8GN"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="posterImageView" destination="n2V-hU-9wM" id="nlu-3U-EKb"/>
+                                    <outlet property="subtitleLabel" destination="nIm-PG-dwu" id="fQF-DW-T5A"/>
+                                    <outlet property="titleLabel" destination="D2X-8N-ofV" id="eVS-Cf-6QI"/>
+                                    <outlet property="watchView" destination="qRN-39-eIp" id="HSh-5V-tNi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -284,19 +347,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Менің профилім" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUI-G8-Sbd">
-                                <rect key="frame" x="24" y="271" width="345" height="29"/>
+                                <rect key="frame" x="24" y="271" width="345" height="28"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ali@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8D-6s-7oZ">
-                                <rect key="frame" x="24" y="308" width="345" height="17"/>
+                                <rect key="frame" x="24" y="307" width="345" height="17"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                 <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f89-BI-bPY">
-                                <rect key="frame" x="0.0" y="349" width="393" height="420"/>
+                                <rect key="frame" x="0.0" y="348" width="393" height="421"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTK-1p-V2C">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
@@ -328,7 +391,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Өңдеу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QB-TX-xqW">
-                                                <rect key="frame" x="308" y="25" width="37" height="15"/>
+                                                <rect key="frame" x="308" y="25.666666666666686" width="37" height="14"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="12"/>
                                                 <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -430,7 +493,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қазақша" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udk-io-BF8">
-                                                <rect key="frame" x="295.33333333333331" y="25.333333333333311" width="49.666666666666686" height="14.333333333333332"/>
+                                                <rect key="frame" x="295.33333333333331" y="25.666666666666686" width="49.666666666666686" height="14"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="12"/>
                                                 <color key="textColor" red="0.61176470589999998" green="0.63921568630000003" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -952,6 +1015,7 @@
         <image name="email" width="20" height="20"/>
         <image name="logout" width="24" height="24"/>
         <image name="password" width="20" height="20"/>
+        <image name="play-small" width="16" height="16"/>
         <image name="show-password" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -21,6 +21,10 @@
 		1877339D2AC4873100D52C5C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877339C2AC4873100D52C5C /* Storage.swift */; };
 		1877339F2AC4933100D52C5C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877339E2AC4933100D52C5C /* ProfileViewController.swift */; };
 		187733A12AC4982E00D52C5C /* LogoutModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187733A02AC4982E00D52C5C /* LogoutModalController.swift */; };
+		187E0A342AC59B8700900207 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E0A332AC59B8700900207 /* MovieTableViewCell.swift */; };
+		187E0A362AC59BC600900207 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E0A352AC59BC600900207 /* FavoritesTableViewController.swift */; };
+		187E0A392AC5A18A00900207 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E0A382AC5A18A00900207 /* Movie.swift */; };
+		187E0A3B2AC5A28700900207 /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E0A3A2AC5A28700900207 /* Poster.swift */; };
 		18CA76DB2AC4A3A3005921AF /* LanguageModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CA76DA2AC4A3A3005921AF /* LanguageModalController.swift */; };
 		18CA76E52AC4AB82005921AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18CA76E72AC4AB82005921AF /* Localizable.strings */; };
 		18CA76F22AC553F8005921AF /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CA76F12AC553F8005921AF /* ChangePasswordViewController.swift */; };
@@ -42,6 +46,10 @@
 		1877339C2AC4873100D52C5C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		1877339E2AC4933100D52C5C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		187733A02AC4982E00D52C5C /* LogoutModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutModalController.swift; sourceTree = "<group>"; };
+		187E0A332AC59B8700900207 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		187E0A352AC59BC600900207 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		187E0A382AC5A18A00900207 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		187E0A3A2AC5A28700900207 /* Poster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
 		18CA76DA2AC4A3A3005921AF /* LanguageModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModalController.swift; sourceTree = "<group>"; };
 		18CA76DF2AC4A77C005921AF /* kk */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = kk; path = kk.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18CA76E22AC4A839005921AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +97,7 @@
 			children = (
 				1819A6672AC45CAB00DDF064 /* Application */,
 				1819A6682AC45CB700DDF064 /* Resources */,
+				187E0A372AC5A17D00900207 /* Models */,
 				1819A6722AC45FB700DDF064 /* Views */,
 				1877339B2AC4849E00D52C5C /* ViewControllers */,
 				1819A6592AC45B0B00DDF064 /* Main.storyboard */,
@@ -133,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				1819A6732AC45FCF00DDF064 /* TextFieldWithPadding.swift */,
+				187E0A332AC59B8700900207 /* MovieTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,8 +152,18 @@
 			children = (
 				18CA76D92AC4A20C005921AF /* Authorization */,
 				18CA76D82AC4A206005921AF /* Profile */,
+				187E0A352AC59BC600900207 /* FavoritesTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		187E0A372AC5A17D00900207 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				187E0A382AC5A18A00900207 /* Movie.swift */,
+				187E0A3A2AC5A28700900207 /* Poster.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		18CA76D82AC4A206005921AF /* Profile */ = {
@@ -304,10 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187E0A342AC59B8700900207 /* MovieTableViewCell.swift in Sources */,
 				1877339F2AC4933100D52C5C /* ProfileViewController.swift in Sources */,
+				187E0A392AC5A18A00900207 /* Movie.swift in Sources */,
 				1819A6582AC45B0B00DDF064 /* LoginViewController.swift in Sources */,
 				1819A6742AC45FCF00DDF064 /* TextFieldWithPadding.swift in Sources */,
 				18CA76F22AC553F8005921AF /* ChangePasswordViewController.swift in Sources */,
+				187E0A3B2AC5A28700900207 /* Poster.swift in Sources */,
+				187E0A362AC59BC600900207 /* FavoritesTableViewController.swift in Sources */,
 				1819A6542AC45B0B00DDF064 /* AppDelegate.swift in Sources */,
 				187733A12AC4982E00D52C5C /* LogoutModalController.swift in Sources */,
 				18CA76DB2AC4A3A3005921AF /* LanguageModalController.swift in Sources */,
