@@ -61,6 +61,10 @@ class LanguageModalController: UIViewController, UITableViewDataSource, UITableV
 
         label.text = languages[indexPath.row][1]
 
+        let checkImageView = cell.viewWithTag(1001) as! UIImageView
+
+        checkImageView.isHidden = Localize.currentLanguage() != languages[indexPath.row][0]
+
         return cell
     }
 
