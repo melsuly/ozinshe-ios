@@ -23,6 +23,7 @@
 		187733A12AC4982E00D52C5C /* LogoutModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187733A02AC4982E00D52C5C /* LogoutModalController.swift */; };
 		18CA76DB2AC4A3A3005921AF /* LanguageModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CA76DA2AC4A3A3005921AF /* LanguageModalController.swift */; };
 		18CA76E52AC4AB82005921AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18CA76E72AC4AB82005921AF /* Localizable.strings */; };
+		18CA76F22AC553F8005921AF /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CA76F12AC553F8005921AF /* ChangePasswordViewController.swift */; };
 		79692888F72E69B45CAEE88B /* Pods_Ozinshe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C796C49343A36E61EEF51DD4 /* Pods_Ozinshe.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		18CA76E62AC4AB82005921AF /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18CA76E82AC4AB85005921AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18CA76E92AC4AB87005921AF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18CA76F12AC553F8005921AF /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		2A1F8D79B8FE25882F8BD12F /* Pods-Ozinshe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.debug.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.debug.xcconfig"; sourceTree = "<group>"; };
 		C61FDD3DE9E05B68B4B1A307 /* Pods-Ozinshe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.release.xcconfig"; sourceTree = "<group>"; };
 		C796C49343A36E61EEF51DD4 /* Pods_Ozinshe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozinshe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 				1877339E2AC4933100D52C5C /* ProfileViewController.swift */,
 				187733A02AC4982E00D52C5C /* LogoutModalController.swift */,
 				18CA76DA2AC4A3A3005921AF /* LanguageModalController.swift */,
+				18CA76F12AC553F8005921AF /* ChangePasswordViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				1877339F2AC4933100D52C5C /* ProfileViewController.swift in Sources */,
 				1819A6582AC45B0B00DDF064 /* LoginViewController.swift in Sources */,
 				1819A6742AC45FCF00DDF064 /* TextFieldWithPadding.swift in Sources */,
+				18CA76F22AC553F8005921AF /* ChangePasswordViewController.swift in Sources */,
 				1819A6542AC45B0B00DDF064 /* AppDelegate.swift in Sources */,
 				187733A12AC4982E00D52C5C /* LogoutModalController.swift in Sources */,
 				18CA76DB2AC4A3A3005921AF /* LanguageModalController.swift in Sources */,
