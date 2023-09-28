@@ -156,6 +156,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="B4B-Nm-uAX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="15I-xI-2y7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="frI-7O-cqR" secondAttribute="trailing" constant="24" id="18Q-cU-Rbz"/>
                             <constraint firstItem="frI-7O-cqR" firstAttribute="top" secondItem="aFR-0k-LCr" secondAttribute="bottom" constant="40" id="58c-vg-kUr"/>
                             <constraint firstItem="eZR-ul-Pdc" firstAttribute="top" secondItem="ocA-C5-RRm" secondAttribute="bottom" constant="29" id="5e7-K8-E0E"/>
@@ -180,6 +181,7 @@
                             <constraint firstItem="yQz-Ck-Dmb" firstAttribute="centerY" secondItem="O7r-UN-Y6M" secondAttribute="centerY" id="eA7-SV-Yel"/>
                             <constraint firstItem="COO-vN-Wpe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="eMe-bl-3LY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZR-ul-Pdc" secondAttribute="trailing" constant="24" id="fpq-Ih-cBX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="B4B-Nm-uAX" secondAttribute="trailing" constant="24" id="k9D-3a-59Z"/>
                             <constraint firstItem="aCC-Qk-JTL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="lur-gl-rEy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="COO-vN-Wpe" secondAttribute="trailing" constant="24" id="n83-KJ-wt1"/>
                             <constraint firstItem="frI-7O-cqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="npo-5u-olp"/>
@@ -247,7 +249,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="T7Y-Iw-uOH">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="T7Y-Iw-uOH">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T7Y-Iw-uOH" id="0yO-Be-ugF">
