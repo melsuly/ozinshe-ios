@@ -99,7 +99,7 @@
 				1819A6682AC45CB700DDF064 /* Resources */,
 				187E0A372AC5A17D00900207 /* Models */,
 				1819A6722AC45FB700DDF064 /* Views */,
-				1877339B2AC4849E00D52C5C /* ViewControllers */,
+				1877339B2AC4849E00D52C5C /* Controllers */,
 				1819A6592AC45B0B00DDF064 /* Main.storyboard */,
 				1819A6612AC45B0C00DDF064 /* Info.plist */,
 			);
@@ -147,14 +147,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1877339B2AC4849E00D52C5C /* ViewControllers */ = {
+		1877339B2AC4849E00D52C5C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				18CA76D92AC4A20C005921AF /* Authorization */,
 				18CA76D82AC4A206005921AF /* Profile */,
 				187E0A352AC59BC600900207 /* FavoritesTableViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		187E0A372AC5A17D00900207 /* Models */ = {
