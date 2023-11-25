@@ -18,6 +18,9 @@
 		1819A6702AC45DAB00DDF064 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1819A66C2AC45DAB00DDF064 /* SF-Pro-Display-Medium.otf */; };
 		1819A6712AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1819A66D2AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf */; };
 		1819A6742AC45FCF00DDF064 /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819A6732AC45FCF00DDF064 /* TextFieldWithPadding.swift */; };
+		1842C5CF2B1222CC00F5499E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842C5CE2B1222CC00F5499E /* HomeViewController.swift */; };
+		1842C5D22B1225EB00F5499E /* BannersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842C5D12B1225EB00F5499E /* BannersTableViewCell.swift */; };
+		1842C5D42B1230BF00F5499E /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842C5D32B1230BF00F5499E /* BannerCollectionViewCell.swift */; };
 		1877339D2AC4873100D52C5C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877339C2AC4873100D52C5C /* Storage.swift */; };
 		1877339F2AC4933100D52C5C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877339E2AC4933100D52C5C /* ProfileViewController.swift */; };
 		187733A12AC4982E00D52C5C /* LogoutModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187733A02AC4982E00D52C5C /* LogoutModalController.swift */; };
@@ -43,6 +46,9 @@
 		1819A66C2AC45DAB00DDF064 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		1819A66D2AC45DAB00DDF064 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		1819A6732AC45FCF00DDF064 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		1842C5CE2B1222CC00F5499E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1842C5D12B1225EB00F5499E /* BannersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersTableViewCell.swift; sourceTree = "<group>"; };
+		1842C5D32B1230BF00F5499E /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		1877339C2AC4873100D52C5C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		1877339E2AC4933100D52C5C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		187733A02AC4982E00D52C5C /* LogoutModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutModalController.swift; sourceTree = "<group>"; };
@@ -147,9 +153,28 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1842C5CD2B1222A000F5499E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1842C5D02B1225A700F5499E /* Cells */,
+				1842C5CE2B1222CC00F5499E /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1842C5D02B1225A700F5499E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1842C5D12B1225EB00F5499E /* BannersTableViewCell.swift */,
+				1842C5D32B1230BF00F5499E /* BannerCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		1877339B2AC4849E00D52C5C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1842C5CD2B1222A000F5499E /* Home */,
 				18CA76D92AC4A20C005921AF /* Authorization */,
 				18CA76D82AC4A206005921AF /* Profile */,
 				187E0A352AC59BC600900207 /* FavoritesTableViewController.swift */,
@@ -280,7 +305,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		027F646DC540EAA010B4994C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -290,7 +315,7 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Ozinshe/Pods-Ozinshe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ozinshe/Pods-Ozinshe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -329,9 +354,12 @@
 				187E0A392AC5A18A00900207 /* Movie.swift in Sources */,
 				1819A6582AC45B0B00DDF064 /* LoginViewController.swift in Sources */,
 				1819A6742AC45FCF00DDF064 /* TextFieldWithPadding.swift in Sources */,
+				1842C5CF2B1222CC00F5499E /* HomeViewController.swift in Sources */,
+				1842C5D42B1230BF00F5499E /* BannerCollectionViewCell.swift in Sources */,
 				18CA76F22AC553F8005921AF /* ChangePasswordViewController.swift in Sources */,
 				187E0A3B2AC5A28700900207 /* Poster.swift in Sources */,
 				187E0A362AC59BC600900207 /* FavoritesTableViewController.swift in Sources */,
+				1842C5D22B1225EB00F5499E /* BannersTableViewCell.swift in Sources */,
 				1819A6542AC45B0B00DDF064 /* AppDelegate.swift in Sources */,
 				187733A12AC4982E00D52C5C /* LogoutModalController.swift in Sources */,
 				18CA76DB2AC4A3A3005921AF /* LanguageModalController.swift in Sources */,
